@@ -1,8 +1,8 @@
 {
-  "name": "FireTV Server (v1.0.5)",
+  "name": "firetv-server",
   "version": "0.1.0",
   "slug": "firetv",
-  "description": "FireTV Server",
+  "description": "firetv-server v1.0.5",
   "url": "https://github.com/uyorum/hassio-addons",
   "startup": "services",
   "boot": "auto",
