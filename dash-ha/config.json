@@ -1,0 +1,34 @@
+{
+  "name": "dash-ha",
+  "version": "0.1.0",
+  "slug": "dash-ha",
+  "description": "dash-ha",
+  "url": "https://github.com/uyorum/hassio-addons",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true
+  "options": {
+    "home_assistant": {
+      "host": "hassio",
+      "proto": "http",
+      "port": 8123,
+      "api_password": "",
+      "verify_cert": "false"
+    },
+    "buttons": [
+      {"mac": "XX:XX:XX:XX:XX:XX", "event": "event_name"}
+    ]
+  },
+  "schema": {
+    "home_assistant": {
+      "host": "str",
+      "proto": "match(^http(s)?$)",
+      "port": "int",
+      "api_password": "str",
+      "verify_cert": "bool"
+    }
+    "buttons": [
+      {"mac": "str", "event": "str"}
+    }
+  }
+}
