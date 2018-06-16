@@ -6,14 +6,14 @@
   "url": "https://github.com/uyorum/hassio-addons",
   "startup": "services",
   "boot": "auto",
-  "host_network": true
+  "host_network": "true",
   "options": {
     "home_assistant": {
       "host": "hassio",
       "proto": "http",
       "port": 8123,
       "api_password": "",
-      "verify_cert": "false"
+      "verify_cert": false
     },
     "buttons": [
       {"mac": "XX:XX:XX:XX:XX:XX", "event": "event_name"}
@@ -26,9 +26,9 @@
       "port": "int",
       "api_password": "str",
       "verify_cert": "bool"
-    }
+    },
     "buttons": [
       {"mac": "str", "event": "str"}
-    }
+    ]
   }
 }
