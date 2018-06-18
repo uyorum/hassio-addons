@@ -6,12 +6,11 @@
   "url": "https://github.com/uyorum/hassio-addons",
   "startup": "services",
   "boot": "auto",
+  "homeassistant_api": "true",
   "host_network": "true",
   "options": {
     "home_assistant": {
-      "host": "hassio",
-      "proto": "http",
-      "port": 80,
+      "api_endpoint": "http://hassio/homeassistant/api",
       "api_password": "",
       "verify_cert": false
     },
@@ -21,9 +20,7 @@
   },
   "schema": {
     "home_assistant": {
-      "host": "str",
-      "proto": "match(^http(s)?$)",
-      "port": "int",
+      "api_endpoint": "url",
       "api_password": "str",
       "verify_cert": "bool"
     },
